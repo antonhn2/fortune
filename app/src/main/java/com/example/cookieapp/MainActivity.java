@@ -38,7 +38,10 @@ public class MainActivity extends AppCompatActivity {
                     JSONObject result = getJSONObjectFromURL("https://api.adviceslip.com/advice");
                     //JsonObject advice = parser.parse(json).getAsJsonObject();
                     JSONObject fortune = result.getJSONObject("slip");
-                    name.setText(fortune.toString());
+                    String fortune2 = fortune.toString();
+                    String[] beta = fortune2.split("\"");
+                    String aa = beta[3];
+                    name.setText(aa);
                 } catch (IOException e) {
                     e.printStackTrace();
                 } catch (JSONException e) {
