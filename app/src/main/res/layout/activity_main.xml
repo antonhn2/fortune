@@ -29,4 +29,11 @@
         android:gravity="center"
         android:text="Create Fortune"
         android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher" />
+
 </LinearLayout>
